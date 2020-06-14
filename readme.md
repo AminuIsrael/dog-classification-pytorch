@@ -1,4 +1,4 @@
-#  Web App Dog for Identification using Deep Learning  
+#  Web App for Dog Identification using Deep Learning  
 
 **Input To WebApp** : Upload Image from Local Machine and Submit
 ![pg1.png](/images/pg1.png) 
