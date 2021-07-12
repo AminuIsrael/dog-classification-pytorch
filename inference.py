@@ -34,7 +34,7 @@ class_names =['Affenpinscher', 'Afghan hound', 'Airedale terrier', 'Akita', 'Ala
 
 def get_flower_name(image_bytes):
 	tensor = get_tensor(image_bytes)
-	device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+	device = torch.device("cpu")
 	model.eval()
 	with torch.no_grad():
 		out = model(tensor.to(device))

@@ -31,7 +31,7 @@ def get_model():
 	if use_cuda:
 		model_transfer = model_transfer.cuda()
 
-	model_transfer.load_state_dict(torch.load('model_transfer.pt'))
+	model_transfer.load_state_dict(torch.load('model_transfer.pt', map_location ='cpu'))
 	model_transfer.eval()
 	return model_transfer
 
